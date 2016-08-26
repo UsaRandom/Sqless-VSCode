@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>sqless</string>
+	</array>
+	<key>name</key>
+	<string>Sqless</string>
+	<key>patterns</key>
+	<array>
+
+		<dict>
+			<key>begin</key>
+			<string>//.*</string>
+			<key>end</key>
+			<string>\n</string>
+			<key>name</key>
+			<string>comment.line.sqless</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(?i)\b(import|sum|avg|count|true|false|using|def|null|go)\b</string>
+			<key>name</key>
+			<string>keyword.control.sqless</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>(?i)\b(select|from|var|join|where|left|right|full|order|byte|short|int|long|float|double|char|nchar|string|nstring|date|time|datetime|bool|without)\b</string>
+			<key>name</key>
+			<string>keyword.many.sqless</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>-?\d+(\d+)*(\.\d+(\d+)?)?(d)?</string>
+			<key>name</key>
+			<string>constant.numeric.sqless</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>'[^']+'</string>
+			<key>name</key>
+			<string>string.quoted.single.sqless</string>
+		</dict>
+
+	</array>
+
+	<key>scopeName</key>
+	<string>source.sqless</string>
+	<key>uuid</key>
+	<string>d077cdf6-51c9-412e-abca-6fdb4a7ff2bc</string>
+</dict>
+</plist>
